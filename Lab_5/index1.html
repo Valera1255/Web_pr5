@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a, b, k=false;
+		var c=prompt("enter c:");
+		while (k == false)
+	{
+		if( Math.floor(c/10000) > 0 && Math.floor(c/10000) < 10 && Number.isInteger(c) == false)
+		{
+			k=true;
+		}
+		else
+		{
+			k=false;
+			a = prompt("Число не коректне. Повторно введіть число ");
+		}
+	}
+	a=c%10;
+	b=c/10000;
+	b=Math.floor(b);
+	alert(b%a);
+	</script>
+</body>
+</html>

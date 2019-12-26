@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script3</title>
+</head>
+<body>
+	<script type="text/javascript">
+    var mas = [];
+    var a = prompt("enter :");
+    a = parseInt(a)
+    var k=a;
+    if(Number.isInteger(a)==false)
+    {
+        alert("Це не число")
+    }
+    else
+    {
+    for (i = 2; i <= a; i++) {
+        if (a % i == 0) {
+            a = a / i;
+            mas.push(i);
+            i--;
+        }
+    }
+    if (mas[0] == k) alert('Це просте число');
+    else alert(mas); 
+    }
+	</script>
+</body>
+</html>

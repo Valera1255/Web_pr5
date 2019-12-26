@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script4</title>
+</head>
+<body>
+	<script type="text/javascript">
+    var a = prompt();
+    var b = prompt();
+	var c = a;
+    var d = b;
+    var nsk;    
+        for (i = 1; i < 20; i++) {
+            if (c > d) c = c - d;
+            else {
+                if (c < d){
+                	d = d - c;
+                } 
+                else {
+                    if (d === c) {
+                        break;
+                    }
+                }
+            }
+        }
+    nsk = a * b / c;
+    alert(nsk);
+	</script>
+</body>
+</html>
